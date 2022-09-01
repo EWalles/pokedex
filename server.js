@@ -19,8 +19,8 @@ app.get('/', function(req, res) {
   });
 
 //NEW
-app.get('/pokemon', function(req, res) {
-    res.render('pokemon.ejs');
+app.get('/', function(req, res) {
+    res.render('index.ejs');
   });
   
 

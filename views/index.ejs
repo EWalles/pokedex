@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../views/partials/head %>
+    <title>The Pokedex</title>
+  </head>
+<body >
+  <header>
+    <h1>The Pokedex</h1>
+    <h6>Gotta Catch 'em All!</h6>
+    <a href="/add">Add a Pokemon to the Pokedex</a>
+    <p>There are <%=data.length%> Pokemon in the Pokedex</p>
+  </header>
+  <div class='container'>
+          <% for (var i = 0; i < data.length; i++) { %>
+                <a class="all" href="/<%=i%>">
+                  <div class="names"><%=data[i].name%></div>
+                  <div class="wrapper">
+                    <img id="index" src="<%=data[i].img; %>">
+                    </img>
+                  </div>
+                </a>
+         <% } %>
+  </div>
+  </body>
+</html>
