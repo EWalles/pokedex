@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- head -->
+  <head>
   <%- include('./partials/head.ejs') %>
+  <%- include("./partials/header.ejs") %>
+  </head>
 
-  <body>
-    <%- include("./partials/header.ejs") %>
-    <!-- pokedex-container -->
-    <div class="container">
-      <!-- pokemon-image -->
+    <body>
+
+      <div class="container">
+
       <div class="pokemon-image">
         <img id="pokemon-image"src="<%=pokemon.img%>" alt="<%=pokemon.name%>" />
       </div>

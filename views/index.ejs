@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- head -->
+
+<head>
 <%- include('./partials/head.ejs') %>
-<body>
-    
-<!-- header -->
 <%- include('./partials/header.ejs') %> 
+</head>
+
+<body>
+   
 <!-- new pokemon link -->
 <h1 class="new-pokemon">
     <a href="/pokemon/new">
         <button>add new pokemon</button>
     </a>
 </h1>
-        <!-- container-->
         <div class="container">
-            
-            <!-- allPokemon loop -->
+         
             <% allPokemon.forEach((pokemon,index)=>{ %>
             <!-- pokemon container -->
             <a class="pokemon-container" href="/pokemon/<%=index%>">
