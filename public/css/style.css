@@ -35,18 +35,14 @@ a {
 
 .container {
     background-color: #d7d7d5;
-    
-    /* background-color: white; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    /* margin: -10px 0 0 -10px; */
 }
 
 .pokemon-container {
-    /* text-decoration: none; */
-    /* color:  #474040; */
+
     border: 2px solid #a8b9bd;
     border-radius: 25px;
     background-color: white;
@@ -104,9 +100,9 @@ a {
 }
 
 
-/* show */
+
 .pokedex-container{
-    /* background-image: url(./pokedex.png); */
+
     background-repeat: no-repeat;
     background-position: center;
     background-color: #d7d7d5;
